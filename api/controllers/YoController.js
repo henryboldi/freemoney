@@ -8,15 +8,12 @@
 module.exports = {
 	index: function(req, res, next) {
 
-	Like.create(likeObj, function likeCreated(err, like) {
-		Like.publishCreate(like);
+	var yoObj = {
+      user: req.param('username')
+    }
 
-		Hacks.findOne({ _id: likeObj['postID'] }).exec(function(err, hack) { 
-			hack.likeCount = hack.likeCount + 1;
-			hack.save(function(err, hackSave) {
-				res.redirect('/hacks/show/' + likeObj['postID']);
-			});
-		});		    		 		
+	Yo.create(yoObj, function likeCreated(err, yo) {
+		Yo.publishCreate(yo);	    		 		
 	});
   }
 };
