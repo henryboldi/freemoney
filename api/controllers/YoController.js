@@ -13,7 +13,10 @@ module.exports = {
     }
 
 	Yo.create(yoObj, function likeCreated(err, yo) {
-		Yo.publishCreate(yo);	    		 		
+		Yo.publishCreate(yo);
+		res.json({
+			done: yo
+        });	    		 		
 	});
   }
 };
