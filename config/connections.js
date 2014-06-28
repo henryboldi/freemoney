@@ -23,7 +23,7 @@ module.exports.connections = {
 
     mongo: {
       module: 'sails-mongo',
-      url: 'mongodb://freemoney:test@ds031618.mongolab.com:31618/freemoney',
+      url: 'mongodb://freemoney:testing@ds031618.mongolab.com:31618/freemoney',
       schema: true
     }
 
