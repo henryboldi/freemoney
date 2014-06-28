@@ -22,7 +22,7 @@
     "rc": "~0.3.3",
     "sails": "~0.10.0-rc7",
     "sails-disk": "~0.10.0",
-    "sails-mongo": "^0.9.8"
+    "sails-mongo": "^0.10.0-rc5"
   },
   "scripts": {
     "start": "node app.js",
